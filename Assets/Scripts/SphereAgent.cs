@@ -1,12 +1,7 @@
 using UnityEngine;
 
-public enum Grupo { Tipo1, Tipo2 }
-
 public class SphereAgent : MonoBehaviour
 {
-    [Header("Configuración de grupo")]
-    public Grupo grupo = Grupo.Tipo1;
-
     [Header("Referencias")]
     [Tooltip("Solo para Tipo1: esfera VERDE objetivo predefinida")]
     public Transform objetivoTipo1;   // la verde seleccionada
@@ -39,10 +34,16 @@ public class SphereAgent : MonoBehaviour
 
         Transform destino = null;
 
-        if (grupo == Grupo.Tipo1)
+        // Determinar destino usando el tag del GameObject
+        if (gameObject.CompareTag("Tipo1"))
             destino = objetivoTipo1;
-        else // Grupo.Tipo2
+        else if (gameObject.CompareTag("Tipo2"))
             destino = cilindro;
+        else
+        {
+            // Si no tiene tag conocido, mostrar mensaje de error
+            Debug.Log($"El objeto {gameObject.name} no tiene un tag válido (Tipo1/Tipo2) asignado");
+        }
 
         if (destino != null)
         {
