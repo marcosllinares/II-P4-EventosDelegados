@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 2048624855122050835}
   - component: {fileID: 8290099488074321306}
   - component: {fileID: 638422876224311669}
-  - component: {fileID: 864539056972988633}
   - component: {fileID: 4654639237687329488}
+  - component: {fileID: 5915735252936014220}
   m_Layer: 0
-  m_Name: FreeLichPBR 1
+  m_Name: FreeLichPBR 4
   m_TagString: Tipo1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,22 +110,6 @@ CapsuleCollider:
   m_Height: 1.89
   m_Direction: 1
   m_Center: {x: 0, y: 0.94, z: 0}
---- !u!114 &864539056972988633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393094614412855620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5865434e1eddbc4fb5f857b854df43e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  notificador: {fileID: 0}
-  escudoTipo2Seleccionado: {fileID: 0}
-  escudoTipo1Seleccionado: {fileID: 0}
-  velocidad: 3
 --- !u!23 &4654639237687329488
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -171,6 +155,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5915735252936014220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393094614412855620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdcee5677951abc4ca89b9197b359f25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notificador: {fileID: 0}
+  escudoTipo1Objetivo: {fileID: 0}
+  escudoTipo2Objetivo: {fileID: 0}
 --- !u!1 &687531507868535938
 GameObject:
   m_ObjectHideFlags: 0

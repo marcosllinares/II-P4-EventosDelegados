@@ -8,6 +8,8 @@ TagManager:
   - Cilindro
   - Tipo1
   - Tipo2
+  - EscudoTipo1
+  - EscudoTipo2
   layers:
   - Default
   - TransparentFX
