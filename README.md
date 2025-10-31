@@ -113,7 +113,7 @@ public class Notificador : MonoBehaviour
 
 ### Ejercicio 4
 
-![b](https://imgur.com/Ve0ZwDk.gif)
+![a](https://imgur.com/v5VlGuc.gif)
 
 
 ### Ejercicio 6
