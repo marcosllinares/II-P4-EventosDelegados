@@ -10,6 +10,8 @@ TagManager:
   - Tipo2
   - EscudoTipo1
   - EscudoTipo2
+  - EscudoTipo1Especial
+  - EscudoTipo2Especial
   layers:
   - Default
   - TransparentFX

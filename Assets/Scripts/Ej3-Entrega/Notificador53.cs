@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Notificador5 : MonoBehaviour
+public class Notificador53 : MonoBehaviour
 {
     // Delegados para diferentes tipos de escudos recogidos
     public delegate void DelegadoEscudoRecogido(int puntos);
@@ -12,6 +12,6 @@ public class Notificador5 : MonoBehaviour
     public void NotificarEscudoRecogido(int puntos, string tipoEscudo)
     {
         OnEscudoRecogido?.Invoke(puntos);
-        Debug.Log($"[Notificador] Escudo {tipoEscudo} recogido → +{puntos} puntos");
+        Debug.Log($"[Notiyyficador] Escudo {tipoEscudo} recogido → +{puntos} puntos");
     }
 }

@@ -12,17 +12,15 @@ public class Notificador : MonoBehaviour
     
     private void OnCollisionEnter(Collision collision)
     {
-        // Si colisiona con un humanoide Tipo1
-        if (collision.collider.CompareTag("Tipo1"))
+        if (collision.collider.CompareTag("EscudoTipo1Especial"))
         {
             OnColisionConTipo2?.Invoke();
-            Debug.Log("[Notificador] Colisión con Tipo1 → Tipo1 va hacia escudos Tipo2");
+            Debug.Log("[Notificador] Colisión con Tipo1 → Tipo1 va hacia su personaje tipo");
         }
-        // Si colisiona con un humanoide Tipo2
-        else if (collision.collider.CompareTag("Tipo2"))
+        else if (collision.collider.CompareTag("EscudoTipo2Especial"))
         {
             OnColisionConTipo1?.Invoke();
-            Debug.Log("[Notificador] Colisión con Tipo2 → Tipo1 va hacia escudo seleccionado Tipo1");
+            Debug.Log("[Notificador] Colisión con Tipo2 → Tipo2 se aleja de su personaje tipo");
         }
     }
 }

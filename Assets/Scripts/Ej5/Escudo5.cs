@@ -25,12 +25,12 @@ public class Escudo5 : MonoBehaviour
         // Configurar puntos según el tag
         if (gameObject.CompareTag("EscudoTipo1"))
         {
-            puntosAlRecoger = 5;
+            puntosAlRecoger = 10;
             tipoEscudo = "Tipo1";
         }
         else if (gameObject.CompareTag("EscudoTipo2"))
         {
-            puntosAlRecoger = 10;
+            puntosAlRecoger = 20;
             tipoEscudo = "Tipo2";
         }
     }
